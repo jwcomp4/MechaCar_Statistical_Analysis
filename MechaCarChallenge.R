@@ -21,9 +21,12 @@ lot_summary <- suspension_df %>% group_by(Manufacturing_Lot) %>% summarize(Mean=
 
 # Deliverable 3: T-Tests on Suspension Coils
 
-plt <- ggplot(suspension_df,aes(x=PSI))
-plt + geom_density()
+t.test(suspension_df$PSI, mu=1500)
 
-suspesion_sample <- suspension_df %>% sample_n(25)
-plt <- ggplot(suspesion_sample,aes(x=PSI))
-plt + geom_density() 
+lot_1 <- subset(suspension_df, Manufacturing_Lot==1)
+lot_2 <- subset(suspension_df, Manufacturing_Lot==2)
+lot_3 <- subset(suspension_df, Manufacturing_Lot==3)
+
+t.test(lot_1$PSI, suspension_df$PSI)
+t.test(lot_2$PSI, suspension_df$PSI)
+t.test(lot_3$PSI, suspension_df$PSI)
