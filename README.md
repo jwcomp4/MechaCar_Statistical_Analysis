@@ -1,6 +1,6 @@
 # MechaCar_Statistical_Analysis
 
-The following data analysis uses R programming language to analyze production data from a car manufacturer to pinpoint production problems.
+The following data analysis uses R programming language to analyze production data from MechaCar to pinpoint production problems.
 
 ## Linear Regression to Predict MPG
 
@@ -13,7 +13,7 @@ The following data analysis uses R programming language to analyze production da
     - Finally, we can feel confident that this linear model does predict the mpg because the model produces a r-squared values of 0.7149.
         - This means that 71.49% of the variablility is described by this model.
 
-IMAGE of LINEAR REGRESSION
+![IMAGE of LINEAR REGRESSION](readme_images/mod15_lin_regress.png)
 
 ## Summary Statistics on Suspension Coils
 
@@ -23,14 +23,14 @@ IMAGE of LINEAR REGRESSION
         - Variance: 62.294
         - Standard Deviation: 7.893
 
-IMAGE of TOTAL_SUMMARY
+![IMAGE of TOTAL_SUMMARY](readme_images/total_summary.png)
 
     - Comparing each manufacturing lot highlights that Lot 3 is outside of the suspension specifications set by MechaCar:
         - Variance: 170.286
         - Standard Deviation: 13.049
 - Reviewing the summary statistics for each manufacturing lot suggests that the problems at Lot 3 are driving up the variance observed across all manufacturing lots.
 
-IMAGE of LOT_SUMMARY
+![IMAGE of LOT_SUMMARY](readme_images/lot_summary.png)
 
 ## T-Tests on Suspension Coils
 
@@ -39,22 +39,22 @@ IMAGE of LOT_SUMMARY
 - The first t-test compares the mean of all of the suspension coil PSI across all manufacturing lots to a presumed mean of 1500 PSI to reveal a p-value of 0.06028. 
     - Because this is above 0.05, we cannot reject the null hypothesis: the means are statistically similar.
 
-IMAGE of TOTAL_LOT_TTEST
+![IMAGE of TOTAL_LOT_TTEST](readme_images/total_lot_ttest.png)
 
 - The second t-test compares the mean Lot 1 suspension coil PSI to to the presumed mean of 1500 PSI to reveal a p-value of 1. 
     - Because this is above 0.05, we cannot reject the null hypothesis: the means are statistically similar.
 
-IMAGE of LOT_1_TTEST
+![IMAGE of LOT_1_TTEST](readme_images/lot_1_ttest.png)
 
 - The second t-test compares the mean Lot 2 suspension coil PSI to the presumed mean of 1500 PSI to reveal a p-value of 0.6072. 
     - Because this is above 0.05, we cannot reject the null hypothesis: the means are statistically similar.
 
-IMAGE of LOT_2_TTEST
+![IMAGE of LOT_2_TTEST](readme_images/lot_2_ttest.png)
 
 - The second t-test compares the mean Lot 3 suspension coil PSI to the presumed mean of 1500 PSI to reveal a p-value of 0.04168 
     - Because this is below 0.05, we can reject the null hypothesis: the means are statistically different.
 
-IMAGE OF LOT_3_TTEST
+![IMAGE OF LOT_3_TTEST](readme_images/lot_3_ttest.png)
 
 ## Study Design MechaCar vs Competition
 
